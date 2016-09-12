@@ -1,0 +1,40 @@
+{
+  "name": "webpack-on-rails",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "clean": "rimraf public/assets/**/*",
+    "prewatch": "npm run clean",
+    "prebuild": "npm run clean",
+    "watch": "webpack-dashboard -- webpack --watch",
+    "build": "webpack",
+    "start": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.4.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.25.0",
+    "image-webpack-loader": "^2.0.0",
+    "node-sass": "^3.9.3",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dashboard": "^0.1.8",
+    "webpack-devserver": "^0.0.6"
+  },
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  }
+}

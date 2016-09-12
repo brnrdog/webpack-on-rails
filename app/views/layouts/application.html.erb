@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GsdRails</title>
+    <title>Webpack on Rails</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= webpack_bundle_tag 'styles'%>
   </head>
 
   <body>
-    <%= yield %>
+    <div id="app"></div>
+
+    <%= webpack_bundle_tag 'scripts' %>
   </body>
 </html>
